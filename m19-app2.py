@@ -12,7 +12,7 @@ def setup_page():
 
 def load_dataset():
     # Carregar o dataset enviado pelo usuário
-    bank = pd.read_csv('./data/input/bank-additional-full.csv', sep=';')
+    bank = pd.read_csv('bank-additional-full.csv', sep=';')
     bank.head(10)
     
 def main():
