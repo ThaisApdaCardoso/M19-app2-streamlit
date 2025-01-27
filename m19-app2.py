@@ -16,8 +16,6 @@ import streamlit as st
 from os import pipe
 
 
-%%timeit
-
 custom_params = {"axes.spines.right": False, "axes.spines.top": False}
 sns.set_theme(style="ticks", rc=custom_params)
  
