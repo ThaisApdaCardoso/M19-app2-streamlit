@@ -27,9 +27,6 @@ def load_data(file_data):
   except:
       return pd.read_excel(file_data, sep = ',')
 
-bank_raw = load_data('bank-additional-full.csv')
-bank = bank_raw.copy()
- 
 # FUNÇÃO PARA FILTROS COM OPÇÃO "ALL"
 @st.cache_data
 def multiselect_filter(relatorio, col, selecionados):
