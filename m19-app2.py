@@ -20,7 +20,7 @@ custom_params = {"axes.spines.right": False, "axes.spines.top": False}
 sns.set_theme(style="ticks", rc=custom_params)
  
 # FUNÇÃO PARA LEITURA DOS DADOS - @ST.CACHE
-@st.cache_data(show_spinner = True, allow_output_mutation = True)
+@st.cache_data(show_spinner = True)
 def load_data(file_data):
   try:
       return pd.read_csv(file_data, sep = ';')
