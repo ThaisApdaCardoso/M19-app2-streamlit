@@ -5,6 +5,7 @@ from PIL import Image
 from io import BytesIO
 import streamlit as st
 from os import pipe
+import timeit
 
 
 custom_params = {"axes.spines.right": False, "axes.spines.top": False}
@@ -50,7 +51,7 @@ def main():
   )
  
   # TÍTULO PRINCIPAL DO APP
-  st.title('# Telemarketing analisys')
+  st.title('Telemarketing analisys')
   st.markdown("---")
  
   # APRESENTA UMA IMAGEM
