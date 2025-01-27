@@ -31,7 +31,7 @@ bank_raw = load_data('bank-additional-full.csv')
 bank = bank_raw.copy()
  
 # FUNÇÃO PARA FILTROS COM OPÇÃO "ALL"
-@st.cache_data(allow_output_mutation = True)
+@st.cache_data
 def multiselect_filter(relatorio, col, selecionados):
   if 'all' in selecionados:
     return relatorio
