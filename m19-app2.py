@@ -48,7 +48,7 @@ def main():
                        initial_sidebar_state='expanded')
 
     # TÍTULO PRINCIPAL DO APP
-    st.title('# Telemarketing analysis')
+    st.title('Telemarketing analysis')
     st.markdown("---")
 
     # APRESENTA UMA IMAGEM
